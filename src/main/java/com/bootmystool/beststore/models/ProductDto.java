@@ -16,7 +16,7 @@ public class ProductDto {
 	private String category;
 	
 	@Min(0)
-	private double price;
+	private Double price;
 	
 	@Size(min = 10, message="The description should be at leats 10 characters")
 	@Size(max = 200, message="The description cannot exceed 200 characters")
@@ -46,11 +46,11 @@ public class ProductDto {
 		this.category = category;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 

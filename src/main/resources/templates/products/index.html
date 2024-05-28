@@ -30,7 +30,7 @@
 	            <td th:text="${product.name}"></td>
 	            <td th:text="${product.brand}"></td>
 	            <td th:text="${product.category}"></td>
-	            <td th:text="'$' + ${product.prince}"></td>
+	            <td th:text="'$' + ${product.price}"></td>
 	            <td><img th:src="@{'/img/' + ${product.imageFileName}}" alt="Product Image" style="width:50px;height:auto;"></td>
 	            <td th:text="${#dates.format(product.createdAt, 'yyyy-MM-dd')}"></td>
 	            <td>
